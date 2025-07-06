@@ -23,6 +23,8 @@ flex:1;
 display:flex;
 gap:20px;
 align-items:center;
+font-size: 20px;
+font-weight:bold
 }
 .link{
 cursor:pointer;
