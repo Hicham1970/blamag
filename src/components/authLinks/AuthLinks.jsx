@@ -1,14 +1,66 @@
-import React from 'react'
-import styles from './authLinks.module.css'
+"use client"; 
 
+// next-blog/src/components/authLinks/AuthLinks.jsx
+import React, {useState} from "react";
+import styles from "./authLinks.module.css";
+import Link from "next/link";
 
 const AuthLinks = () => {
-  return (
-    <div className={styles.container}>
-        AuthLinks
-      
-    </div>
-  )
-}
 
-export default AuthLinks
+  const [open, setOpen] = useState(false); 
+
+  const status = "notauthenticated"; 
+
+  return (
+    <>
+      {status === "notauthenticated" ? (
+        <>
+          <Link href="/login" className={styles.link}>
+            Login
+          </Link>
+        </>
+      ) : (
+        <>
+          <Link href="/write" className={styles.link}>
+            Write
+          </Link>
+          <span className={styles.link}>Logout</span>
+        </>
+      )}
+      <div className={styles.burger} onClick={() => setOpen(!open)}>
+        <div className={styles.line}></div>
+        <div className={styles.line}></div>
+        <div className={styles.line}></div>
+      </div>
+      {open && (
+        <div className={styles.responsiveMenu}>
+          <Link href="/" className={styles.link}>
+            Home
+          </Link>
+          <Link href="/about" className={styles.link}>
+            About
+          </Link>
+          <Link href="/contact" className={styles.link}>
+            Contact
+          </Link>
+          {status === "notauthenticated" ? (
+            <>
+              <Link href="/login" className={styles.link}>
+                Login
+              </Link>
+            </>
+          ) : (
+            <>
+              <Link href="/write" className={styles.link}>
+                Write
+              </Link>
+              <span className={styles.link}>Logout</span>
+            </>
+          )}
+        </div>
+      )}
+    </>
+  );
+};
+
+export default AuthLinks;
