@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./category.module.css";
+import Styles from "./category.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
 const Category = () => {
   return (
-    <div className={styles.container}>
+    <div className={Styles.container}>
       Category
       </div>
   );
