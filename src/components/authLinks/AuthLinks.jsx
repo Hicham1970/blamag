@@ -2,59 +2,59 @@
 
 // next-blog/src/components/authLinks/AuthLinks.jsx
 import React, {useState} from "react";
-import Styles from "./authLinks.module.css";
+import styles from "./authLinks.module.css";
 import Link from "next/link";
 
 const AuthLinks = () => {
 
   const [open, setOpen] = useState(false); 
 
-  const status = "notauthenticated"; 
+  const status = "authenticated"; 
 
   return (
     <>
       {status === "notauthenticated" ? (
         <>
-          <Link href="/login" className={Styles.link}>
+          <Link href="/login" className={styles.link}>
             Login
           </Link>
         </>
       ) : (
         <>
-          <Link href="/write" className={Styles.link}>
+          <Link href="/write" className={styles.link}>
             Write
           </Link>
-          <span className={Styles.link}>Logout</span>
+          <span className={styles.link}>Logout</span>
         </>
       )}
-      <div className={Styles.burger} onClick={() => setOpen(!open)}>
-        <div className={Styles.line}></div>
-        <div className={Styles.line}></div>
-        <div className={Styles.line}></div>
+      <div className={styles.burger} onClick={() => setOpen(!open)}>
+        <div className={styles.line}></div>
+        <div className={styles.line}></div>
+        <div className={styles.line}></div>
       </div>
       {open && (
-        <div className={Styles.responsiveMenu}>
-          <Link href="/" className={Styles.link}>
+        <div className={styles.responsiveMenu}>
+          <Link href="/" className={styles.link}>
             Home
           </Link>
-          <Link href="/about" className={Styles.link}>
+          <Link href="/about" className={styles.link}>
             About
           </Link>
-          <Link href="/contact" className={Styles.link}>
+          <Link href="/contact" className={styles.link}>
             Contact
           </Link>
           {status === "notauthenticated" ? (
             <>
-              <Link href="/login" className={Styles.link}>
+              <Link href="/login" className={styles.link}>
                 Login
               </Link>
             </>
           ) : (
             <>
-              <Link href="/write" className={Styles.link}>
+              <Link href="/write" className={styles.link}>
                 Write
               </Link>
-              <span className={Styles.link}>Logout</span>
+              <span className={styles.link}>Logout</span>
             </>
           )}
         </div>

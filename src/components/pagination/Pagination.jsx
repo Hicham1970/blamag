@@ -1,11 +1,11 @@
 import React from 'react'
-import Styles from "./pagination.module.css"    
+import styles from "./pagination.module.css"    
 
 const Pagination= () => {
   return (
-      <div className={Styles.container}>
-          <button className={Styles.button}>Previous</button>
-          <button className={Styles.button}>Next</button>
+      <div className={styles.container}>
+          <button className={styles.button}>Previous</button>
+          <button className={styles.button}>Next</button>
 
       
     </div>

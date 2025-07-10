@@ -2,65 +2,65 @@
 
 import React from "react";
 import Link from "next/link";
-import Styles from "./menuPosts.module.css";
+import styles from "./menuPosts.module.css";
 import Image from "next/image";
 
 const MenuPosts = ({ withImage }) => {
   return (
-    <div className={Styles.items}>
-      <Link href="/" className={Styles.item}>
+    <div className={styles.items}>
+      <Link href="/" className={styles.item}>
         {withImage && (
-          <div className={Styles.imageContainer}>
-            <Image src="/moi.jpg" alt="" fill className={Styles.image} />
+          <div className={styles.imageContainer}>
+            <Image src="/moi.jpg" alt="" fill className={styles.image} />
           </div>
         )}
 
-        <div className={Styles.textContainer}>
-          <span className={`${Styles.category} ${Styles.food}`}>Food</span>
-          <h3 className={Styles.postTitle}>
+        <div className={styles.textContainer}>
+          <span className={`${styles.category} ${styles.food}`}>Food</span>
+          <h3 className={styles.postTitle}>
             Lorem ipsum dolor sit amet consectetur.
           </h3>
-          <div className={Styles.details}>
-            <span className={Styles.username}>Hicham Gar - </span>
-            <span className={Styles.date}>12.09.2006</span>
+          <div className={styles.details}>
+            <span className={styles.username}>Hicham Gar - </span>
+            <span className={styles.date}>12.09.2006</span>
           </div>
         </div>
       </Link>
-      <Link href="/" className={Styles.item}>
+      <Link href="/" className={styles.item}>
         {withImage && (
-          <div className={Styles.imageContainer}>
-            <Image src="/moi.jpg" alt="" fill className={Styles.image} />
+          <div className={styles.imageContainer}>
+            <Image src="/moi.jpg" alt="" fill className={styles.image} />
           </div>
         )}
 
-        <div className={Styles.textContainer}>
-          <span className={`${Styles.category} ${Styles.fashion}`}>
+        <div className={styles.textContainer}>
+          <span className={`${styles.category} ${styles.fashion}`}>
             Fashion
           </span>
-          <h3 className={Styles.postTitle}>
+          <h3 className={styles.postTitle}>
             Lorem ipsum dolor sit amet consectetur.
           </h3>
-          <div className={Styles.details}>
-            <span className={Styles.username}>Hicham Gar - </span>
-            <span className={Styles.date}>12.09.2006</span>
+          <div className={styles.details}>
+            <span className={styles.username}>Hicham Gar - </span>
+            <span className={styles.date}>12.09.2006</span>
           </div>
         </div>
       </Link>
-      <Link href="/" className={Styles.item}>
+      <Link href="/" className={styles.item}>
         {withImage && (
-          <div className={Styles.imageContainer}>
-            <Image src="/moi.jpg" alt="" fill className={Styles.image} />
+          <div className={styles.imageContainer}>
+            <Image src="/moi.jpg" alt="" fill className={styles.image} />
           </div>
         )}
 
-        <div className={Styles.textContainer}>
-          <span className={`${Styles.category} ${Styles.coding}`}>Coding</span>
-          <h3 className={Styles.postTitle}>
+        <div className={styles.textContainer}>
+          <span className={`${styles.category} ${styles.coding}`}>Coding</span>
+          <h3 className={styles.postTitle}>
             Lorem ipsum dolor sit amet consectetur.
           </h3>
-          <div className={Styles.details}>
-            <span className={Styles.username}>Hicham Gar - </span>
-            <span className={Styles.date}>12.09.2006</span>
+          <div className={styles.details}>
+            <span className={styles.username}>Hicham Gar - </span>
+            <span className={styles.date}>12.09.2006</span>
           </div>
         </div>
       </Link>

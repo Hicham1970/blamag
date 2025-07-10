@@ -1,15 +1,15 @@
 import React from 'react'
-import Styles from './blogPage.module.css'; 
+import styles from './blogPage.module.css'; 
 import CardList from '@/components/cardList/CardList';
 import Menu from '@/components/menu/Menu';
 
-
+// localhost:3000/blog
 
 const BlogPage = () => {
   return (
-    <div className={Styles.container}>
-      <h1 className={Styles.title}> Travel Blog</h1>
-          <div className={Styles.content}>
+    <div className={styles.container}>
+      <h1 className={styles.title}> Travel Blog</h1>
+          <div className={styles.content}>
               <CardList />
               <Menu />
       </div>

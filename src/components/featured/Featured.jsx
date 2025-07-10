@@ -1,22 +1,22 @@
 import React from "react";
-import Styles from "./featured.module.css";
+import styles from "./featured.module.css";
 import Image from "next/image";
 
 const Featured = () => {
   return (
-    <div className={Styles.container}>
-      <h1 className={Styles.title}>
+    <div className={styles.container}>
+      <h1 className={styles.title}>
         <b>Hey, Hicham Dev here !</b> { ""}Discover my stories and creatives ideas.
       </h1>
-      <div className={Styles.post}>
-        <div className={Styles.imgContainer}>
-          <Image src="/p1.jpeg" alt="post" fill className={Styles.image} />
+      <div className={styles.post}>
+        <div className={styles.imgContainer}>
+          <Image src="/p1.jpeg" alt="post" fill className={styles.image} />
         </div>
-        <div className={Styles.textContainer}>
-          <h1 className={Styles.postTitle}>
+        <div className={styles.textContainer}>
+          <h1 className={styles.postTitle}>
             Blogging is fun and easy with Next.js Blog App 🚀 
           </h1>
-          <p className={Styles.postDesc}>
+          <p className={styles.postDesc}>
             Gubergren amet tincidunt mazim consectetuer facilisi dolor quis sea
             amet justo volutpat sea. Diam vero amet duis dolor vulputate nostrud
             amet ipsum et magna. Lorem consectetuer amet lorem enim luptatum
@@ -36,7 +36,7 @@ const Featured = () => {
             est enim ipsum vulputate. Consequat in sit dolores duo voluptua
             diam. Accumsan clita esse duo takimata sed et at et vel no eum.
           </p>
-          <button className={Styles.button}>Read More</button>
+          <button className={styles.button}>Read More</button>
         </div>
       </div>
     </div>

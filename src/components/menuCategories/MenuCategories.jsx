@@ -1,44 +1,44 @@
 import React from 'react'
 import Link from 'next/link'
-import Styles from './menuCategories.module.css'
+import styles from './menuCategories.module.css'
 
 
 const MenuCategories = () => {
   return (
-    <div className={Styles.categoryList}>
+    <div className={styles.categoryList}>
       <Link
         href="/blog?cat=travel"
-        className={`${Styles.categoryItem} ${Styles.travel}`}
+        className={`${styles.categoryItem} ${styles.travel}`}
       >
         Travel
       </Link>
       <Link
-        href="/blog?cat=Styles"
-        className={`${Styles.categoryItem} ${Styles.Styles}`}
+        href="/blog?cat=styles"
+        className={`${styles.categoryItem} ${styles.styles}`}
       >
-        Styles
+        styles
       </Link>
       <Link
         href="/blog?cat=fashion"
-        className={`${Styles.categoryItem} ${Styles.fashion}`}
+        className={`${styles.categoryItem} ${styles.fashion}`}
       >
         Fashion
       </Link>
       <Link
         href="/blog?cat=coding"
-        className={`${Styles.categoryItem} ${Styles.coding}`}
+        className={`${styles.categoryItem} ${styles.coding}`}
       >
         Coding
       </Link>
       <Link
         href="/blog?cat=food"
-        className={`${Styles.categoryItem} ${Styles.food}`}
+        className={`${styles.categoryItem} ${styles.food}`}
       >
         Food
       </Link>
       <Link
         href="/blog?cat=culture"
-        className={`${Styles.categoryItem} ${Styles.culture}`}
+        className={`${styles.categoryItem} ${styles.culture}`}
       >
         Culture
       </Link>
