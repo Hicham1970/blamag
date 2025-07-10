@@ -1,3 +1,63 @@
 .container{
 
 }
+
+.input{
+padding: 50px;
+font-size: 64px; 
+border: none; 
+background-color: transparent;
+}
+.input::placeholder{
+color: #b3b3b1;
+}
+.editor {
+display: flex;
+gap: 20px;
+height: 700px;
+position: relative;
+}
+.textArea{
+width:100%; 
+}
+.button, .addButton{
+width:36px; 
+height:36px;
+border-radius: 50%;
+background-color: transparent;
+border: 1px solid var(--textColor); 
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.addButton{
+border-color: #1a8917;
+}
+
+.add{
+    display:flex; 
+    gap:20px; 
+    background-color: var(--bg);
+    position: absolute;
+    z-index: 666;
+    width: 100%;
+    left:48px;
+}
+
+
+.publish{
+position:absolute; 
+top: 30px; 
+right: 20px;
+padding: 10px 20px;
+border-radius: 5px;
+border: none;
+background-color: teal;
+color: white;
+font-weight: bold;
+cursor: pointer;
+}
+
+

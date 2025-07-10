@@ -82,3 +82,12 @@ a {
     padding-right: 20px;
   }
 }
+
+/* Quill Editor on the /write page*/
+.ql-container {
+  font-size: 20 px !important;
+}
+
+.quill .ql-editor.ql-blank::before {
+  color: #b3b3b1;
+}
