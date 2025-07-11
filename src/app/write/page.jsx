@@ -9,7 +9,7 @@ import "react-quill/dist/quill.bubble.css";
 
 
 const WritePage = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [value, setValue] = useState("");
 
   return (
