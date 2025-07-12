@@ -5,6 +5,7 @@
 .input{
 padding: 50px;
 font-size: 64px; 
+color:var(--textColor);
 border: none; 
 background-color: transparent;
 }
