@@ -74,7 +74,7 @@ const About = () => {
             -Mobile Apps
             <br />
           </p>
-          <button type="button" className={styles.button}  onClick={()=>window.location.href="/contact"}>Contact</button>
+          <button type="button" className={styles.button} >Contact</button>
         </div>
       </div>
     </div>

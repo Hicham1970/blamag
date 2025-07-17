@@ -47,7 +47,7 @@ const MenuPosts = ({ withImage }) => {
   return (
     <div className={styles.items}>
       {foodPosts.slice(0, 3).map((post) => (
-        <Link href={`/post/${post.slug}`} key={post._id} className={styles.item}>
+        <Link href={`/posts/${post.slug}`} key={post._id} className={styles.item}>
           {withImage && (
             <div className={styles.imageContainer}>
               <Image src={post.img || "/moi.jpg"} alt={post.title} fill className={styles.image} />
@@ -66,7 +66,7 @@ const MenuPosts = ({ withImage }) => {
       ))}
 
       {fashionPosts.slice(0, 3).map((post) => (
-        <Link href={`/post/${post.slug}`} key={post._id} className={styles.item}>
+        <Link href={`/posts/${post.slug}`} key={post._id} className={styles.item}>
           {withImage && (
             <div className={styles.imageContainer}>
               <Image src={post.img || "/moi.jpg"} alt={post.title} fill className={styles.image} />
@@ -85,7 +85,7 @@ const MenuPosts = ({ withImage }) => {
       ))}
 
        {codingPosts.slice(0, 3).map((post) => (
-        <Link href={`/post/${post.slug}`} key={post._id} className={styles.item}>
+        <Link href={`/posts/${post.slug}`} key={post._id} className={styles.item}>
           {withImage && (
             <div className={styles.imageContainer}>
               <Image src={post.img || "/moi.jpg"} alt={post.title} fill className={styles.image} />

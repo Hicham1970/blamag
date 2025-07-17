@@ -40,7 +40,7 @@ export const GET = async (req) => {
 export const POST = async (req) => {
     const session = await getAuthSession();
 
-    if (!session) {
+    if (!session || !session.user) {
         return NextResponse.json(
             { message: "Not authenticated !" },
             { status: 401 }
@@ -52,13 +52,13 @@ export const POST = async (req) => {
         const post = await prisma.Post.create({
             data: {
                 ...body,
-                userEmail: session.user.email,
+                userEmail: session.user.email, 
             },
             
         })
 
 
-        return NextResponse.json(post, { status: 200 });
+        return NextResponse.json(post, { status: 201 });
     } catch (err) {
         console.log(err);
         return NextResponse.json(

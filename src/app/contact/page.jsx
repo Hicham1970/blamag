@@ -60,7 +60,7 @@ const Contact = () => {
 
   return (
     <div className={styles.mainContainer}>
-      <h1 className={styles.title}>Let's Keep In Touch </h1>
+      <h1 className={styles.title}>Let&apos s Keep In Touch </h1>
       <div className={styles.content}>
         <div className={styles.imgContainer}>
           <Image
@@ -90,13 +90,13 @@ const Contact = () => {
           <textarea
             className={styles.textarea}
             placeholder="message"
-            col="30"
-            rows="10"
+            cols={30}
+            rows={10}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
           <br />
-          <button type="submit" className={styles.button}>Send Massage</button>
+          <button type="submit" className={styles.button}>Send Message</button>
         </form>
       </div>
     </div>

@@ -33,7 +33,7 @@ const SinglePage = async ({ params }) => {
   if (!data?.id) {
     return <div className={styles.container}>
       <h1>Post non trouvé</h1>
-      <p>Désolé, l'article que vous cherchez n'existe pas.</p>
+      <p>Désolé, l &apos article que vous cherchez n&apos existe pas.</p>
     </div>
   }
 

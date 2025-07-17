@@ -28,26 +28,19 @@ const WritePage = () => {
   const [file, setFile] = useState(null);
   const [media, setMedia] = useState("");
   const [title, setTitle] = useState("");
-  // const [cat, setCat] = useState("");
   const [catSlug, setCatSlug] = useState("");
 
   // upload the image:
   useEffect(() => {
     const upload = () => {
-      const newName = new Date().getTime().getTime()  + file.name;
+      const newName = new Date().getTime() + file.name;
       const storageRef = ref(storage, newName);
 
       const uploadTask = uploadBytesResumable(storageRef, file);
 
-      // Register three observers:
-      // 1. 'state_changed' observer, called any time the state changes
-      // 2. Error observer, called on failure
-      // 3. Completion observer, called on successful completion
       uploadTask.on(
         "state_changed",
         (snapshot) => {
-          // Observe state change events such as progress, pause, and resume
-          // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
           const progress =
             (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
           console.log("Upload is " + progress + "% done");
@@ -64,8 +57,6 @@ const WritePage = () => {
           // Handle unsuccessful uploads
         },
         () => {
-          // Handle successful uploads on complete
-          // For instance, get the download URL: https://firebasestorage.googleapis.com/...
           getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
             console.log("File available at", downloadURL);
             setMedia(downloadURL);
@@ -100,16 +91,43 @@ const WritePage = () => {
   };
 
   const handleSubmit = async () => {
-    const res = await fetch("/api/posts", {
-      method: "POST",
-      body: JSON.stringify({
-        title,
-        desc,
-        img: media,
-        slug: slugify(title),
-        catSlug: catSlug,
-      }),
-    });
+    if (!catSlug) {
+      alert("Veuillez sélectionner une catégorie.");
+      return;
+    }
+
+    try {
+      const res = await fetch("/api/posts", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          title,
+          desc,
+          img: media,
+          slug: slugify(title),
+          catSlug: catSlug,
+        }),
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        if (data.slug) {
+          router.push(`/posts/${data.slug}`);
+        } else {
+          console.error("API did not return a slug in the response.", data);
+          alert("Post créé, mais la redirection a échoué. Le slug est manquant dans la réponse de l'API.");
+        }
+      } else {
+        const errorText = await res.text();
+        console.error("Échec de la publication. Statut:", res.status, "Réponse:", errorText);
+        alert(`Échec de la publication: ${errorText}`);
+      }
+    } catch (error) {
+      console.error("Une erreur est survenue lors de la soumission du post:", error);
+      alert("Une erreur inattendue est survenue. Veuillez vérifier la console.");
+    }
   };
 
   return (
