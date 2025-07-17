@@ -18,29 +18,29 @@ const Featured = () => {
             Blogging is fun and easy with Next.js Blog App 🚀
           </h1>
           <p className={styles.postDesc}>
-            <b>Le Blogging : </b>De la Révolution Numérique à l'Outil Global de
+            <b>Le Blogging : </b>De la Révolution Numérique à l&aposOutil Global de
             Communication{" "}
             <b>Introduction Le blogging, contraction de "web log"</b>
-            (journal web), représente l'une des innovations les plus
-            démocratiques d'Internet. Cette forme de publication en ligne a
-            transformé radicalement la façon dont l'information circule, se
+            (journal web), représente l&apos une des innovations les plus
+            démocratiques d&aposInternet. Cette forme de publication en ligne a
+            transformé radicalement la façon dont l&apos information circule, se
             consomme et se produit à travers le monde. Depuis ses humbles débuts
-            dans les années 1990 jusqu'à son statut actuel d'outil
+            dans les années 1990 jusqu&apos à son statut actuel d&apos outil
             incontournable de communication, le blogging a révolutionné
-            l'expression personnelle, le journalisme, le marketing et
-            l'éducation. ## Les Origines du Blogging (1990-1999) ### Les
-            Premiers Pas L'histoire du blogging commence en 1994 avec Justin
-            Hall, étudiant américain qui crée "Justin's Links from the
-            Underground", considéré comme le premier blog de l'histoire. Ce site
+            l&apos expression personnelle, le journalisme, le marketing et
+            l&apos éducation. ## Les Origines du Blogging (1990-1999) ### Les
+            Premiers Pas L&apos histoire du blogging commence en 1994 avec Justin
+            Hall, étudiant américain qui crée "Justin&apos s Links from the
+            Underground", considéré comme le premier blog de l&apos histoire. Ce site
             personnel partageait des liens commentés et des réflexions
             personnelles, établissant les bases de ce qui deviendrait une
-            révolution communicationnelle. ### L'Évolution du Concept Le terme
+            révolution communicationnelle. ### L&aposÉvolution du Concept Le terme
             "weblog" fut inventé en 1997 par Jorn Barger pour décrire son site
             "Robot Wisdom". En 1999, Peter Merholz raccourcit ce terme en "blog"
-            sur son propre site, créant ainsi l'appellation qui s'imposera
+            sur son propre site, créant ainsi l&apos appellation qui s&apos imposera
             mondialement. Cette époque pionnière était caractérisée par des
             blogs personnels, souvent techniques, tenus par des passionnés
-            d'informatique et d'Internet. <b>Les Premières Plateformes</b> Les
+            d&apos informatique et d&aposInternet. <b>Les Premières Plateformes</b> Les
             premiers blogs étaient codés manuellement en HTML, limitant leur
             création aux personnes techniquement compétentes. Cette barrière
             technique explique pourquoi la communauté blogueuse initiale .......
