@@ -43,25 +43,25 @@ const About = () => {
             <br />
             <br />
             Cette double expertise me donne une perspective unique dans
-            l'industrie maritime. J&apos ai créé un logiciel de calcul
+            l&apos industrie maritime. J&apos ai créé un logiciel de calcul
             automatique pour les draft surveys qui est désormais utilisé par
             plusieurs compagnies de survey. Mon système de traçabilité des
-            carburants par blockchain aide à lutter contre les fraudes. J'ai
+            carburants par blockchain aide à lutter contre les fraudes. J&apos ai
             aussi développé une IA qui détecte les anomalies dans les
             certificats de navires, réduisant les erreurs de 80%.
           </p>
         </div>
         <div className={styles.item}>
-          <h1 className={styles.title}>Vision d'avenir</h1>
+          <h1 className={styles.title}>Vision d&apos avenir</h1>
           <p className={styles.itemDesc}>
-            L'industrie maritime vit une révolution numérique. Mon rôle est de
-            faire le pont entre la tradition maritime et l'innovation
+            L&apos industrie maritime vit une révolution numérique. Mon rôle est de
+            faire le pont entre la tradition maritime et l&apos innovation
             technologique. Je consulte désormais pour des ports intelligents,
-            forme des équipes d'inspecteurs aux nouveaux outils digitaux, et
-            contribue à l'élaboration de standards internationaux pour la
-            digitalisation des surveys. Chaque ligne de code que j'écris
+            forme des équipes d&apos inspecteurs aux nouveaux outils digitaux, et
+            contribue à l&apos élaboration de standards internationaux pour la
+            digitalisation des surveys. Chaque ligne de code que j&apos écris
             améliore la sécurité en mer. Chaque inspection que je réalise
-            nourrit mes algorithmes. C'est cette boucle vertueuse qui me
+            nourrit mes algorithmes. C&apos est cette boucle vertueuse qui me
             passionne depuis deux décennies.
             <br />
             <br />
@@ -74,7 +74,7 @@ const About = () => {
             -Mobile Apps
             <br />
           </p>
-          <button text="Contact" url="/contact"></button>
+          <button type="button" className={styles.button}  onClick={()=>window.location.href="/contact"}>Contact</button>
         </div>
       </div>
     </div>
