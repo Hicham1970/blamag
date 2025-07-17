@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./cardList.module.css";
 import Pagination from "@/components/pagination/Pagination";
-import Link from "next/link";
 import Card from "../card/Card";
 
 const getData = async (page, cat) => {

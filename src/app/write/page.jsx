@@ -3,8 +3,7 @@
 import { useState, useEffect } from "react";
 import styles from "./writePage.module.css";
 import Image from "next/image";
-import ReactQuill from "react-quill";
-// import "react-quill/dist/quill.snow.css";
+import dynamic from "next/dynamic";
 import "react-quill/dist/quill.bubble.css";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
@@ -16,6 +15,9 @@ import {
 } from "firebase/storage";
 import { getAuth, signInAnonymously } from "firebase/auth";
 import { app } from "@/utils/firebase";
+
+// Import ReactQuill dynamiquement pour désactiver le SSR
+const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 const storage = getStorage(app);
 
@@ -33,7 +35,7 @@ const WritePage = () => {
   // upload the image:
   useEffect(() => {
     const upload = () => {
-      const newName = new Date().getTime + file.name;
+      const newName = new Date().getTime().getTime  + file.name;
       const storageRef = ref(storage, newName);
 
       const uploadTask = uploadBytesResumable(storageRef, file);

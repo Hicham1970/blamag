@@ -26,6 +26,7 @@ model User {
 
   Posts Post[]
   Comments Comment[]
+  Contacts Contact[]
 }
  
 model Account {
@@ -95,6 +96,20 @@ img String?
 Posts Post[]
 
 }
+
+
+
+model Contact{
+id String @id @default(cuid()) @map("_id")
+name String 
+email String 
+message String
+
+userEmail String
+user User @relation(fields: [userEmail], references: [email], onDelete: Cascade)
+}
+
+
 
 model Post {
 id String @id @default(cuid()) @map("_id")

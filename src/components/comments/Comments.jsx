@@ -68,7 +68,7 @@ const Comments = ({ postSlug }) => {
                     <span className={styles.date}>{item.createdAt}</span>
                   </div>
                 </div>
-                <p className="styles.description">{item.desc}</p>
+                <p className={styles.description}>{item.desc}</p>
               </div>
             ))}
       </div>

@@ -5,10 +5,10 @@ import Menu from '@/components/menu/Menu';
 
 // localhost:3000/blog
 
-const BlogPage = ({searchParams}) => {
+const BlogPage = async ({searchParams}) => {
 
   const page = parseInt(searchParams.page) || 1;
-  const {cat} = searchParams;
+  const {cat} = await searchParams;
 
 
   return (

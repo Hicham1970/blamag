@@ -5,7 +5,7 @@ import Footer from '@/components/footer/Footer';
 import { ThemeContextProvider } from '@/context/ThemeContext';
 import ThemeProvider from '@/providers/ThemeProvider';
 import AuthProvider from '@/providers/AuthProvider';
-
+import { ClientLayoutWrapper } from '@/components/clientLayoutWrapper/ClientLayoutWrapper';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,7 +24,9 @@ export default function RootLayout({ children }) {
               <div className="container">
                 <div className="wrapper">
                   <Navbar />
-                  {children}
+                  <ClientLayoutWrapper>
+                    {children}
+                  </ClientLayoutWrapper>
                   <Footer />
                 </div>
               </div>

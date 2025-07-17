@@ -7,7 +7,7 @@ import CardList from "@/components/cardList/CardList";
 
 
 
-export default function Home({ searchParams }) {
+async function Home({ searchParams }) {
   const page = parseInt(searchParams.page) || 1;
 
   return (
@@ -19,8 +19,10 @@ export default function Home({ searchParams }) {
           <CardList page={page} />
           <Menu />
         </div>
-        
       </div>
     </div>
   );
 }
+
+export default Home;
+
