@@ -32,23 +32,23 @@ const About = () => {
           <h1 className={styles.title}>How Are We?</h1>
           <h3 className={styles.title}>Mon parcours maritime</h3>
           <p className={styles.itemDesc}>
-            J'ai commencé ma carrière comme inspecteur stagiaire  sur des navires
-            marchands avant de me spécialiser dans l'inspection maritime. Au fil
-            des années, j'ai certifié plus de 3 000 navires, supervisé des
-            dizaines de surveys complexes, et géré des situations critiques dans
-            les plus grands ports européens et asiatiques. Ma spécialité ? Les
-            inspections de conformité MARPOL, les bunker surveys, et les audits
-            de sécurité sur les navires de commerce international.
+            J&apos ai commencé ma carrière comme inspecteur stagiaire sur des
+            navires marchands avant de me spécialiser dans l&apos inspection
+            maritime. Au fil des années, j&apos ai certifié plus de 3 000
+            navires, supervisé des dizaines de surveys complexes, et géré des
+            situations critiques dans les plus grands ports européens et
+            asiatiques. Ma spécialité ? Les inspections de conformité MARPOL,
+            les bunker surveys, et les audits de sécurité sur les navires de
+            commerce international.
             <br />
-            
             <br />
             Cette double expertise me donne une perspective unique dans
-            l'industrie maritime. J'ai créé un logiciel de calcul automatique
-            pour les draft surveys qui est désormais utilisé par plusieurs
-            compagnies de survey. Mon système de traçabilité des carburants par
-            blockchain aide à lutter contre les fraudes. J'ai aussi développé
-            une IA qui détecte les anomalies dans les certificats de navires,
-            réduisant les erreurs de 80%.
+            l'industrie maritime. J&apos ai créé un logiciel de calcul
+            automatique pour les draft surveys qui est désormais utilisé par
+            plusieurs compagnies de survey. Mon système de traçabilité des
+            carburants par blockchain aide à lutter contre les fraudes. J'ai
+            aussi développé une IA qui détecte les anomalies dans les
+            certificats de navires, réduisant les erreurs de 80%.
           </p>
         </div>
         <div className={styles.item}>
@@ -74,7 +74,7 @@ const About = () => {
             -Mobile Apps
             <br />
           </p>
-          <button text="Contact" url="/contact" ></button>
+          <button text="Contact" url="/contact"></button>
         </div>
       </div>
     </div>

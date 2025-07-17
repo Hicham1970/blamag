@@ -13,7 +13,6 @@ import {
   uploadBytesResumable,
   getDownloadURL,
 } from "firebase/storage";
-import { getAuth, signInAnonymously } from "firebase/auth";
 import { app } from "@/utils/firebase";
 
 // Import ReactQuill dynamiquement pour désactiver le SSR
@@ -35,7 +34,7 @@ const WritePage = () => {
   // upload the image:
   useEffect(() => {
     const upload = () => {
-      const newName = new Date().getTime().getTime  + file.name;
+      const newName = new Date().getTime().getTime()  + file.name;
       const storageRef = ref(storage, newName);
 
       const uploadTask = uploadBytesResumable(storageRef, file);
