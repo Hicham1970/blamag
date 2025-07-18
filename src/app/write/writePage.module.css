@@ -51,8 +51,8 @@ cursor:pointer;
 
 .publish{
 position:absolute; 
-top: 30px; 
-right: 20px;
+top: 80px; 
+right: 30px;
 padding: 10px 20px;
 border-radius: 5px;
 border: none;
@@ -108,4 +108,34 @@ cursor: pointer;
   100% {
       transform: rotate(360deg);
   }
+}
+
+@media screen and (max-width: 1024px) {
+  .input {
+    font-size: 40px;
+  }
+  .select {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .input {
+    font-size: 30px;
+  }
+  .select {
+    font-size: 15px;
+  }
+  .publish{
+    width: 74px;
+    height: 44px;
+    font-size: 12px;
+    padding: 5px 10px;
+    
+  }
+  .addButton{
+    width: 24px;
+    height: 24px;
+  }
+
 }
