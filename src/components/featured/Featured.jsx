@@ -6,7 +6,7 @@ const Featured = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
-        <b>Hey, Hicham Dev here !</b> {""}Discover my stories and creatives
+        <b>Hey, Hicham Dev here !</b> {}Discover my stories and creatives
         ideas.
       </h1>
       <div className={styles.post}>
@@ -19,7 +19,7 @@ const Featured = () => {
           </h1>
           <p className={styles.postDesc}>
             <b>Le Blogging : </b>De la Révolution Numérique à l Outil Global de
-            Communication{" "}
+            Communication{ }
             <b>Introduction Le blogging, contraction de web log</b>
             (journal web), représente l une des innovations les plus
             démocratiques d internet. Cette forme de publication en ligne a
@@ -35,7 +35,7 @@ const Featured = () => {
             personnel partageait des liens commentés et des réflexions
             personnelles, établissant les bases de ce qui deviendrait une
             révolution communicationnelle. <b> L évolution du Concept</b> Le terme
-            "weblog" fut inventé en 1997 par Jorn Barger pour décrire son site
+            weblog fut inventé en 1997 par Jorn Barger pour décrire son site
             Robot Wisdom. En 1999, Peter Merholz raccourcit ce terme en blog 
             sur son propre site, créant ainsi l appellation qui s imposera
             mondialement. Cette époque pionnière était caractérisée par des
