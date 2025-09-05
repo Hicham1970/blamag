@@ -1,87 +1,97 @@
-import React from "react";
+
 import styles from "./footer.module.css";
-import Image from 'next/image'; 
+import Image from "next/image"; 
 import Link from "next/link";
 
+const socialIcons = [
+  { href: "https://facebook.com", src: "/facebook.png", alt: "facebook" },
+  { href: "https://instagram.com", src: "/instagram.png", alt: "instagram" },
+  { href: "https://youtube.com", src: "/youTube.png", alt: "YouTube" },
+  { href: "https://tiktok.com", src: "/tiktok.png", alt: "tiktok" },
+];
 
+const linkLists = [
+  {
+    title: "Links",
+    links: [
+      { href: "/", text: "Home" },
+      { href: "/about", text: "About" },
+      { href: "/contact", text: "Contact" },
+      { href: "/blog", text: "Blog" },
+    ],
+  },
+  {
+    title: "Tags",
+    links: [
+      { href: "/styles", text: "Style" },
+      { href: "/fashion", text: "Fashion" },
+      { href: "/coding", text: "Coding" },
+      { href: "/travel", text: "Travel" },
+    ],
+  },
+  {
+    title: "Social",
+    links: [
+      { href: "https://www.youTube.com", text: "YouTube" },
+      { href: "https://www.facebook.com", text: "Facebook" },
+      { href: "https://www.tiktok.com", text: "Tiktok" },
+      { href: "https://www.instagram.com", text: "Instagram" },
+    ],
+  },
+];
 
 const Footer = () => {
   const emailTo = () => "mailto:h.garoum@gmail.com";
 
   return (
-    <div className={styles.container}>
+    <footer className={styles.container}>
       <div className={styles.infos}>
         <div className={styles.logo}>
-          <Image src="/steering-wheel.ico" alt="logo" width={50} height={50} />
-          <h1 className={styles.logoTitle}>
-            <span className={styles.highlightGh}>Gh</span>🚀Blog
-          </h1>
+          <Link href="/" className={styles.logoLink}>
+            <Image
+              src="/steering-wheel.ico"
+              alt="GhBlog logo"
+              width={50}
+              height={50}
+            />
+            <h1 className={styles.logoTitle}>
+              <span className={styles.highlightGh}>Gh</span>🚀Blog
+            </h1>
+          </Link>
         </div>
         <p className={styles.desc}>
-          Ce coin du web est le reflet d'une passion sincère pour le
-          développement. Construit avec Next.js et enrichi par l exploration des
+          Ce coin du web est le reflet dune passion sincère pour le
+          development. Construit avec Next.js et enrichi par l exploration des
           technologies full-stack, ce blog grandit au rythme de mes
-          apprentissages. Développé avec ❤️ pour partager et apprendre ensemble.{" "}
+          apprentissages. Developpe avec ❤️ pour partager et apprendre ensemble.{" "}
           <b>
             Copyright © 2025 Hicham Garoum email:{" "}
             <a href={emailTo()}>h.garoum@gmail.com</a>
           </b>
         </p>
         <div className={styles.icons}>
-          <Image src="/facebook.png" alt="facebook" width={24} height={24} />
-          <Image src="/instagram.png" alt="instagram" width={24} height={24} />
-          <Image src="/youTube.png" alt="YouTube" width={24} height={24} />
-          <Image src="/tiktok.png" alt="tiktok" width={24} height={24} />
+          {socialIcons.map((icon) => (
+            <Link href={icon.href} key={icon.alt} passHref legacyBehavior>
+              <a target="_blank" rel="noopener noreferrer" aria-label={`Visit our ${icon.alt} page`}>
+                <Image src={icon.src} alt={icon.alt} width={24} height={24} />
+              </a>
+            </Link>
+          ))}
         </div>
       </div>
       <div className={styles.links}>
-        <div className={styles.list}>
-          <span className={styles.listTitle}>Links</span>
-          <Link href="/" className={styles.link}>
-            Home
-          </Link>
-          <Link href="/about" className={styles.link}>
-            About
-          </Link>
-          <Link href="/contact" className={styles.link}>
-            Contact
-          </Link>
-          <Link href="/blog" className={styles.link}>
-            Blog
-          </Link>
-        </div>
-        <div className={styles.list}>
-          <span className={styles.listTitle}>Tags</span>
-          <Link href="/styles" className={styles.link}>
-            Style
-          </Link>
-          <Link href="/fashion" className={styles.link}>
-            Fashion
-          </Link>
-          <Link href="/coding" className={styles.link}>
-            Coding
-          </Link>
-          <Link href="/travel" className={styles.link}>
-            Travel
-          </Link>
-        </div>
-        <div className={styles.list}>
-          <span className={styles.listTitle}>Social</span>
-          <Link href="https://www.youTube.com" className={styles.link}>
-            YouTube
-          </Link>
-          <Link href="https://www.facebook.com" className={styles.link}>
-            Facebook
-          </Link>
-          <Link href="https://www.tiktok.com" className={styles.link}>
-            Tiktok
-          </Link>
-          <Link href="https://www.instagram.com" className={styles.link}>
-            Instagram
-          </Link>
-        </div>
+        {linkLists.map((list) => (
+          <div className={styles.list} key={list.title}>
+            <span className={styles.listTitle}>{list.title}</span>
+            {list.links.map((link) => (
+              <Link href={link.href} key={link.text} className={styles.link}>
+                {link.text}
+              </Link>
+            ))}
+          </div>
+        ))}
       </div>
-    </div>
+    </footer>
   ); 
 };
 
