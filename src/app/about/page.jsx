@@ -1,4 +1,4 @@
-import React from "react";
+
 import styles from "./aboutPage.module.css";
 import Image from "next/image";
 // import Button from "@/components/button/Button";
@@ -23,7 +23,7 @@ const About = () => {
         <div className={styles.imgText}>
           <h1 className={styles.imgTitle}>Deux passions, une vision</h1>
           <h2 className={styles.imgDesc}>
-            Handcrafting award winning digital experiences{" "}
+            Handcrafting award winning digital experiences{}
           </h2>
         </div>
       </div>
@@ -32,9 +32,9 @@ const About = () => {
           <h1 className={styles.title}>How Are We?</h1>
           <h3 className={styles.title}>Mon parcours maritime</h3>
           <p className={styles.itemDesc}>
-            J&apos ai commencé ma carrière comme inspecteur stagiaire sur des
-            navires marchands avant de me spécialiser dans l&apos inspection
-            maritime. Au fil des années, j&apos ai certifié plus de 3 000
+            J ai commencé ma carrière comme inspecteur stagiaire sur des
+            navires marchands avant de me spécialiser dans l inspection
+            maritime. Au fil des années, j ai certifié plus de 3 000
             navires, supervisé des dizaines de surveys complexes, et géré des
             situations critiques dans les plus grands ports européens et
             asiatiques. Ma spécialité ? Les inspections de conformité MARPOL,
@@ -43,25 +43,25 @@ const About = () => {
             <br />
             <br />
             Cette double expertise me donne une perspective unique dans
-            l&apos industrie maritime. J&apos ai créé un logiciel de calcul
+            l industrie maritime. J ai créé un logiciel de calcul
             automatique pour les draft surveys qui est désormais utilisé par
             plusieurs compagnies de survey. Mon système de traçabilité des
-            carburants par blockchain aide à lutter contre les fraudes. J&apos ai
+            carburants par blockchain aide à lutter contre les fraudes. J ai
             aussi développé une IA qui détecte les anomalies dans les
             certificats de navires, réduisant les erreurs de 80%.
           </p>
         </div>
         <div className={styles.item}>
-          <h1 className={styles.title}>Vision d&apos avenir</h1>
+          <h1 className={styles.title}>Vision d avenir</h1>
           <p className={styles.itemDesc}>
-            L&apos industrie maritime vit une révolution numérique. Mon rôle est de
-            faire le pont entre la tradition maritime et l&apos innovation
+            L industrie maritime vit une révolution numérique. Mon rôle est de
+            faire le pont entre la tradition maritime et l innovation
             technologique. Je consulte désormais pour des ports intelligents,
-            forme des équipes d&apos inspecteurs aux nouveaux outils digitaux, et
-            contribue à l&apos élaboration de standards internationaux pour la
-            digitalisation des surveys. Chaque ligne de code que j&apos écris
+            forme des équipes d inspecteurs aux nouveaux outils digitaux, et
+            contribue à l élaboration de standards internationaux pour la
+            digitalisation des surveys. Chaque ligne de code que j écris
             améliore la sécurité en mer. Chaque inspection que je réalise
-            nourrit mes algorithmes. C&apos est cette boucle vertueuse qui me
+            nourrit mes algorithmes. C est cette boucle vertueuse qui me
             passionne depuis deux décennies.
             <br />
             <br />

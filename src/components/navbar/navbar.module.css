@@ -12,6 +12,14 @@ display:flex;
 gap:10px;
 }
 
+.highlightGh {
+    font-weight: 900 !important;
+    color: #ff4500 !important;
+    font-family: 'Arial Black', Gadget, sans-serif !important;
+    font-size: 68px !important;
+    text-shadow: 1px 1px 2px black;
+}
+
 .logo{
 flex:1; 
 font-size:36px;
@@ -34,7 +42,9 @@ cursor:pointer;
     .logo{
         font-size: 32px;
     }
-
+    .highlightGh {
+        font-size: 50px !important;
+    }
     .links{
         font-size: 18px;
         gap:15px;
@@ -45,6 +55,9 @@ cursor:pointer;
     .social{
         display: none;
     }
+    .highlightGh {
+        font-size: 40px !important;
+    }
 
     .logo{
         text-align: left;
@@ -54,6 +67,9 @@ cursor:pointer;
 @media screen and (max-width: 768px) {
     .logo{
         font-size: 24px;
+    }
+    .highlightGh {
+        font-size: 30px !important;
     }
 }
 

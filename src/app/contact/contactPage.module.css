@@ -8,7 +8,8 @@
 .content{
 display:flex;
 align-items: center;
-gap:100px;
+    gap: 100px;
+margin-bottom: 300px;
 }
 
 .imgContainer{
@@ -22,6 +23,7 @@ font-size: 60px;
 font-weight: bold;
 color: #53c28b;
 margin-bottom: 100px;
+margin-top:100px; 
 text-align: center;
 
 }

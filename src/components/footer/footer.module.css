@@ -2,7 +2,7 @@
 display:flex; 
 justify-content: space-between;
 align-items: center;
-margin-top:50px;
+margin-top:200px;
 padding:20px 0px;
 color:var(--softTextColor);
 }
@@ -22,6 +22,14 @@ gap:10px;
 
 .logoTitle{
 font-size: 24px;
+}
+
+.highlightGh {
+    font-weight: 900 !important;
+    color: #ff4500 !important;
+    font-family: 'Arial Black', Gadget, sans-serif !important;
+    font-size: 28px !important;
+    text-shadow: 1px 1px 2px black;
 }
 
 .desc{
@@ -78,3 +86,5 @@ font-weight: bold;
     }
     
 }
+
+

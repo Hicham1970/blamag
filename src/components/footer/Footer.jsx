@@ -6,18 +6,26 @@ import Link from "next/link";
 
 
 const Footer = () => {
+  const emailTo = () => "mailto:h.garoum@gmail.com";
+
   return (
     <div className={styles.container}>
       <div className={styles.infos}>
         <div className={styles.logo}>
           <Image src="/steering-wheel.ico" alt="logo" width={50} height={50} />
-          <h1 className={styles.logoTitle}>Gh🚀Blog</h1>
+          <h1 className={styles.logoTitle}>
+            <span className={styles.highlightGh}>Gh</span>🚀Blog
+          </h1>
         </div>
         <p className={styles.desc}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-          saepe! Modi fugiat doloribus aspernatur non, autem praesentium.
-          Commodi, expedita. Optio dolorum nam animi eum culpa. Copyright © 2023
-          Hicham Gar
+          Ce coin du web est le reflet d'une passion sincère pour le
+          développement. Construit avec Next.js et enrichi par l exploration des
+          technologies full-stack, ce blog grandit au rythme de mes
+          apprentissages. Développé avec ❤️ pour partager et apprendre ensemble.{" "}
+          <b>
+            Copyright © 2025 Hicham Garoum email:{" "}
+            <a href={emailTo()}>h.garoum@gmail.com</a>
+          </b>
         </p>
         <div className={styles.icons}>
           <Image src="/facebook.png" alt="facebook" width={24} height={24} />
@@ -59,16 +67,16 @@ const Footer = () => {
         </div>
         <div className={styles.list}>
           <span className={styles.listTitle}>Social</span>
-          <Link href="www.youTube.com" className={styles.link}>
+          <Link href="https://www.youTube.com" className={styles.link}>
             YouTube
           </Link>
-          <Link href="www.facebook.com" className={styles.link}>
+          <Link href="https://www.facebook.com" className={styles.link}>
             Facebook
           </Link>
-          <Link href="www.tiktok.com" className={styles.link}>
+          <Link href="https://www.tiktok.com" className={styles.link}>
             Tiktok
           </Link>
-          <Link href="www.instagram.com" className={styles.link}>
+          <Link href="https://www.instagram.com" className={styles.link}>
             Instagram
           </Link>
         </div>
