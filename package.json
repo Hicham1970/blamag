@@ -13,6 +13,7 @@
     "@prisma/client": "^6.11.1",
     "eslint": "8.48.0",
     "firebase": "^11.10.0",
+    "json-schema": "^0.4.0",
     "next": "13.4.19",
     "next-auth": "^4.24.11",
     "react": "18.2.0",
@@ -23,7 +24,7 @@
   "devDependencies": {
     "@types/estree": "^1.0.8",
     "@types/json-schema": "^7.0.15",
-    "eslint-config-next": "^15.5.2",
+    "eslint-config-next": "13.5.0",
     "prisma": "^6.11.1"
   }
 }
